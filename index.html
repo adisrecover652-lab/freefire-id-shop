@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire ID Shop - Premium Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0a0a0a;
+            --secondary-bg: #1a0d0d;
+            --accent-red: #dc2626;
+            --accent-red-light: #ef4444;
+            --text-primary: #ffffff;
+            --text-secondary: #b4b4b4;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e 50%, #16213e 100%);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px var(--accent-red), 0 0 40px var(--accent-red);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        .search-input:focus {
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-fire text-2xl text-red-500 neon-glow"></i>
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    FF ID Shop
+                </h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="adminLoginBtn" class="px-4 py-2 glass text-sm font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                    <i class="fas fa-cog mr-1"></i>Admin
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="float-animation mb-8">
+                <i class="fas fa-fire text-6xl text-red-500 neon-glow mb-4 block"></i>
+                <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent mb-6">
+                    FREE FIRE ID SHOP
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Premium Free Fire accounts with maxed diamonds, rare skins & legendary weapons
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+                <a href="#gallery" class="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-lg font-semibold rounded-2xl neon-glow hover:from-red-600 hover:to-red-700 transition-all duration-300">
+                    <i class="fas fa-store mr-2"></i>View IDs
+                </a>
+                <a href="#contact" class="px-8 py-4 glass text-lg font-semibold rounded-2xl border-2 border-red-500 hover:bg-red-500 hover:border-transparent transition-all duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Contact Owner
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="px-6 py-12">
+        <div class="max-w-2xl mx-auto">
+            <div class="glass p-1 rounded-2xl shadow-2xl">
+                <div class="flex">
+                    <i class="fas fa-search text-gray-400 p-4"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Search IDs by level, skins or price..." 
+                        class="w-full p-4 bg-transparent outline-none text-lg placeholder-gray-400 search-input"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ID Gallery -->
+    <section id="gallery" class="px-6 py-20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-16 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                🔥 ID GALLERY
+            </h2>
+            <div id="idGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- IDs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="px-6 py-20 bg-gradient-to-b from-black/50 to-transparent">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                Ready to Buy?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Contact owner directly on WhatsApp for instant deals and secure payments
+            </p>
+            <div class="glass p-8 rounded-3xl max-w-md mx-auto">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="fab fa-whatsapp text-4xl text-green-400 mr-4"></i>
+                    <span class="text-2xl font-bold">+91 98765 43210</span>
+                </div>
+                <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20Free%20Fire%20ID%20from%20your%20shop%20🔥" 
+                   target="_blank" 
+                   class="whatsapp-btn block w-full text-xl font-bold py-4 px-8 rounded-2xl text-white text-center neon-glow">
+                    <i class="fab fa-whatsapp mr-3"></i>
+                    Contact on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-75 z-[100] hidden flex items-center justify-center p-6">
+        <div class="glass p-8 rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    Admin Panel
+                </h2>
+                <button id="closeAdminModal" class="text-2xl hover:text-red-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="loginForm">
+                <div class="space-y-4 mb-8">
+                    <input type="password" id="adminPassword" placeholder="Enter Admin Password" 
+                           class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 transition-all text-lg">
+                    <button id="loginBtn" class="w-full bg-gradient-to-r from-red-500 to-red-600 p-4 rounded-xl font-bold text-lg hover:from-red-600 hover:to-red-700 transition-all">
+                        Login
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Panel -->
+            <div id="adminPanel" class="hidden">
+                <form id="uploadForm" class="space-y-4">
+                    <input type="file" id="idImage" accept="image/*" class="w-full p-4 rounded-xl bg-white bg-opacity-10 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-500 file:text-white hover:file:bg-red-600">
+                    <input type="text" id="idLevel" placeholder="Level (e.g., 89)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="text" id="idSkins" placeholder="Skins (e.g., 200+ Legendary)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="number" id="idPrice" placeholder="Price (₹)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 p-4 rounded-xl font-bold text-lg hover:from-green-600 hover:to-green-700 transition-all">
+                        <i class="fas fa-upload mr-2"></i>Upload ID
+                    </button>
+                </form>
+                <div class="mt-6 pt-6 border-t border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-4">Uploaded IDs</h3>
+                    <div id="adminIdList" class="space-y-3 max-h-64 overflow-y-auto"></div>
+                </div>
+                <button id="logoutBtn" class="w-full mt-6 bg-gradient-to-r from-gray-500 to-gray-600 p-3 rounded-xl font-semibold hover:from-gray-600 hover:to-gray-700 transition-all">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data (replace with localStorage data)
+        let ids = JSON.parse(localStorage.getItem('freeFireIds')) || [
+            {
+                id: 1,
+                image: 'https://images.unsplash.com/photo-1618794016229-3f3b8b5e67cf?w=400&h=300&fit=crop',
+                level: '89',
+                skins: '250+ Legendary',
+                price: '₹2,499'
+            },
+            {
+                id: 2,
+                image: 'https://images.unsplash.com/photo-1570549717069-33bed1eb1528?w=400&h=300&fit=crop',
+                level: '92',
+                skins: '300+ Exclusive',
+                price: '₹3,999'
+            },
+            {
+                id: 3,
+                image: 'https://images.unsplash.com/photo-1608043152266-119f8339a919?w=400&h=300&fit=crop',
+                level: '87',
+                skins: '180+ Rare',
+                price: '₹1,899'
+            }
+        ];
+
+        const ADMIN_PASSWORD = 'admin123'; // Change this password
+        let isAdminLoggedIn = false;
+
+        // Render IDs
+        function renderIDs(filteredIds = ids) {
+            const gallery = document.getElementById('idGallery');
+            gallery.innerHTML = filteredIds.map(id => `
+                <div class="glass rounded-3xl p-6 card-hover group">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 h-64 bg-gradient-to-br from-gray-800 to-black">
+                        <img src="${id.image}" alt="Free Fire ID ${id.level}" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-red-500 text-xs px-2 py-1 rounded-full font-bold pulse-animation">
+                            🔥 HOT
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-black text-red-500">${id.level}</span>
+                            <i class="fas fa-crown text-yellow-400 text-xl"></i>
+                        </div>
+                        <div class="text-sm text-gray-400">${id.skins}</div>
+                        <div class="text-2xl font-bold text-green-400">${id.price}</div>
+                        <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20ID%20Level%20${id.level}%20for%20${id.price}%20🔥" 
+                           target="_blank" 
+                           class="whatsapp-btn block w-full text-center py-3 px-6 rounded-2xl font-bold text-sm uppercase tracking-wide">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = ids.filter(id => 
+                id.level.toLowerCase().includes(query) ||
+                id.skins.toLowerCase().includes(query) ||
+                id.price.toLowerCase().includes(query)
+            );
+            renderIDs(filtered);
+        });
+
+        // Admin functionality
+        document.getElementById('adminLoginBtn').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.remove('hidden');
+        });
+
+        document.getElementById('closeAdminModal').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.add('hidden');
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            const password = document.getElementById('adminPassword').value;
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('adminPanel').classList.remove('hidden');
+                loadAdminIDs();
+            } else {
+                alert('❌ Wrong Password!');
+            }
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const imageFile = document.getElementById('idImage').files[0];
+            if (!imageFile) {
+                alert('Please select an image');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const newId = {
+                    id: Date.now(),
+                    image: e.target.result,
+                    level: document.getElementById('idLevel').value,
+                    skins: document.getElementById('idSkins').value,
+                    price: document.getElementById('idPrice').value
+                };
+
+                ids.unshift(newId);
+                localStorage.setItem('freeFireIds', JSON.stringify(ids));
+                renderIDs();
+                loadAdminIDs();
+                document.getElementById('uploadForm').reset();
+                alert('✅ ID uploaded successfully!');
+            };
+            reader.readAsDataURL(imageFile);
+        });
+
+        function loadAdminIDs() {
+            const adminList = document.getElementById('adminIdList');
+            adminList.innerHTML = ids.map(id => `
+                <div class="glass p-3 rounded-xl flex justify-between items-center text-sm">
+                    <span>Lv.${id.level} - ${id.price}</span>
+                    <button onclick="deleteID(${id.id})" class="text-red-400 hover:text-red-300">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        window.deleteID = function(id) {
+            ids = ids.filter(item => item.id !== id);
+            localStorage.setItem('freeFireIds', JSON.stringify(ids));
+            renderIDs();
+            loadAdminIDs();
+        };
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            isAdminLoggedIn = false;
+            document.getElementById('loginForm').classList.remove('hidden');
+            document.getElementById('adminPanel').classList.add('hidden');
+            document.getElementById('adminPassword').value = '';
+        });
+
+        // Initialize
+        renderIDs();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.prevent<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire ID Shop - Premium Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0a0a0a;
+            --secondary-bg: #1a0d0d;
+            --accent-red: #dc2626;
+            --accent-red-light: #ef4444;
+            --text-primary: #ffffff;
+            --text-secondary: #b4b4b4;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e 50%, #16213e 100%);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px var(--accent-red), 0 0 40px var(--accent-red);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        .search-input:focus {
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-fire text-2xl text-red-500 neon-glow"></i>
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    FF ID Shop
+                </h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="adminLoginBtn" class="px-4 py-2 glass text-sm font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                    <i class="fas fa-cog mr-1"></i>Admin
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="float-animation mb-8">
+                <i class="fas fa-fire text-6xl text-red-500 neon-glow mb-4 block"></i>
+                <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent mb-6">
+                    FREE FIRE ID SHOP
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Premium Free Fire accounts with maxed diamonds, rare skins & legendary weapons
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+                <a href="#gallery" class="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-lg font-semibold rounded-2xl neon-glow hover:from-red-600 hover:to-red-700 transition-all duration-300">
+                    <i class="fas fa-store mr-2"></i>View IDs
+                </a>
+                <a href="#contact" class="px-8 py-4 glass text-lg font-semibold rounded-2xl border-2 border-red-500 hover:bg-red-500 hover:border-transparent transition-all duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Contact Owner
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="px-6 py-12">
+        <div class="max-w-2xl mx-auto">
+            <div class="glass p-1 rounded-2xl shadow-2xl">
+                <div class="flex">
+                    <i class="fas fa-search text-gray-400 p-4"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Search IDs by level, skins or price..." 
+                        class="w-full p-4 bg-transparent outline-none text-lg placeholder-gray-400 search-input"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ID Gallery -->
+    <section id="gallery" class="px-6 py-20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-16 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                🔥 ID GALLERY
+            </h2>
+            <div id="idGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- IDs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="px-6 py-20 bg-gradient-to-b from-black/50 to-transparent">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                Ready to Buy?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Contact owner directly on WhatsApp for instant deals and secure payments
+            </p>
+            <div class="glass p-8 rounded-3xl max-w-md mx-auto">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="fab fa-whatsapp text-4xl text-green-400 mr-4"></i>
+                    <span class="text-2xl font-bold">+91 98765 43210</span>
+                </div>
+                <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20Free%20Fire%20ID%20from%20your%20shop%20🔥" 
+                   target="_blank" 
+                   class="whatsapp-btn block w-full text-xl font-bold py-4 px-8 rounded-2xl text-white text-center neon-glow">
+                    <i class="fab fa-whatsapp mr-3"></i>
+                    Contact on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-75 z-[100] hidden flex items-center justify-center p-6">
+        <div class="glass p-8 rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    Admin Panel
+                </h2>
+                <button id="closeAdminModal" class="text-2xl hover:text-red-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="loginForm">
+                <div class="space-y-4 mb-8">
+                    <input type="password" id="adminPassword" placeholder="Enter Admin Password" 
+                           class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 transition-all text-lg">
+                    <button id="loginBtn" class="w-full bg-gradient-to-r from-red-500 to-red-600 p-4 rounded-xl font-bold text-lg hover:from-red-600 hover:to-red-700 transition-all">
+                        Login
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Panel -->
+            <div id="adminPanel" class="hidden">
+                <form id="uploadForm" class="space-y-4">
+                    <input type="file" id="idImage" accept="image/*" class="w-full p-4 rounded-xl bg-white bg-opacity-10 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-500 file:text-white hover:file:bg-red-600">
+                    <input type="text" id="idLevel" placeholder="Level (e.g., 89)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="text" id="idSkins" placeholder="Skins (e.g., 200+ Legendary)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="number" id="idPrice" placeholder="Price (₹)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 p-4 rounded-xl font-bold text-lg hover:from-green-600 hover:to-green-700 transition-all">
+                        <i class="fas fa-upload mr-2"></i>Upload ID
+                    </button>
+                </form>
+                <div class="mt-6 pt-6 border-t border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-4">Uploaded IDs</h3>
+                    <div id="adminIdList" class="space-y-3 max-h-64 overflow-y-auto"></div>
+                </div>
+                <button id="logoutBtn" class="w-full mt-6 bg-gradient-to-r from-gray-500 to-gray-600 p-3 rounded-xl font-semibold hover:from-gray-600 hover:to-gray-700 transition-all">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data (replace with localStorage data)
+        let ids = JSON.parse(localStorage.getItem('freeFireIds')) || [
+            {
+                id: 1,
+                image: 'https://images.unsplash.com/photo-1618794016229-3f3b8b5e67cf?w=400&h=300&fit=crop',
+                level: '89',
+                skins: '250+ Legendary',
+                price: '₹2,499'
+            },
+            {
+                id: 2,
+                image: 'https://images.unsplash.com/photo-1570549717069-33bed1eb1528?w=400&h=300&fit=crop',
+                level: '92',
+                skins: '300+ Exclusive',
+                price: '₹3,999'
+            },
+            {
+                id: 3,
+                image: 'https://images.unsplash.com/photo-1608043152266-119f8339a919?w=400&h=300&fit=crop',
+                level: '87',
+                skins: '180+ Rare',
+                price: '₹1,899'
+            }
+        ];
+
+        const ADMIN_PASSWORD = 'admin123'; // Change this password
+        let isAdminLoggedIn = false;
+
+        // Render IDs
+        function renderIDs(filteredIds = ids) {
+            const gallery = document.getElementById('idGallery');
+            gallery.innerHTML = filteredIds.map(id => `
+                <div class="glass rounded-3xl p-6 card-hover group">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 h-64 bg-gradient-to-br from-gray-800 to-black">
+                        <img src="${id.image}" alt="Free Fire ID ${id.level}" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-red-500 text-xs px-2 py-1 rounded-full font-bold pulse-animation">
+                            🔥 HOT
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-black text-red-500">${id.level}</span>
+                            <i class="fas fa-crown text-yellow-400 text-xl"></i>
+                        </div>
+                        <div class="text-sm text-gray-400">${id.skins}</div>
+                        <div class="text-2xl font-bold text-green-400">${id.price}</div>
+                        <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20ID%20Level%20${id.level}%20for%20${id.price}%20🔥" 
+                           target="_blank" 
+                           class="whatsapp-btn block w-full text-center py-3 px-6 rounded-2xl font-bold text-sm uppercase tracking-wide">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = ids.filter(id => 
+                id.level.toLowerCase().includes(query) ||
+                id.skins.toLowerCase().includes(query) ||
+                id.price.toLowerCase().includes(query)
+            );
+            renderIDs(filtered);
+        });
+
+        // Admin functionality
+        document.getElementById('adminLoginBtn').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.remove('hidden');
+        });
+
+        document.getElementById('closeAdminModal').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.add('hidden');
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            const password = document.getElementById('adminPassword').value;
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('adminPanel').classList.remove('hidden');
+                loadAdminIDs();
+            } else {
+                alert('❌ Wrong Password!');
+            }
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const imageFile = document.getElementById('idImage').files[0];
+            if (!imageFile) {
+                alert('Please select an image');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const newId = {
+                    id: Date.now(),
+                    image: e.target.result,
+                    level: document.getElementById('idLevel').value,
+                    skins: document.getElementById('idSkins').value,
+                    price: document.getElementById('idPrice').value
+                };
+
+                ids.unshift(newId);
+                localStorage.setItem('freeFireIds', JSON.stringify(ids));
+                renderIDs();
+                loadAdminIDs();
+                document.getElementById('uploadForm').reset();
+                alert('✅ ID uploaded successfully!');
+            };
+            reader.readAsDataURL(imageFile);
+        });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire ID Shop - Premium Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0a0a0a;
+            --secondary-bg: #1a0d0d;
+            --accent-red: #dc2626;
+            --accent-red-light: #ef4444;
+            --text-primary: #ffffff;
+            --text-secondary: #b4b4b4;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e 50%, #16213e 100%);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px var(--accent-red), 0 0 40px var(--accent-red);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        .search-input:focus {
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-fire text-2xl text-red-500 neon-glow"></i>
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    FF ID Shop
+                </h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="adminLoginBtn" class="px-4 py-2 glass text-sm font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                    <i class="fas fa-cog mr-1"></i>Admin
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="float-animation mb-8">
+                <i class="fas fa-fire text-6xl text-red-500 neon-glow mb-4 block"></i>
+                <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent mb-6">
+                    FREE FIRE ID SHOP
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Premium Free Fire accounts with maxed diamonds, rare skins & legendary weapons
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+                <a href="#gallery" class="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-lg font-semibold rounded-2xl neon-glow hover:from-red-600 hover:to-red-700 transition-all duration-300">
+                    <i class="fas fa-store mr-2"></i>View IDs
+                </a>
+                <a href="#contact" class="px-8 py-4 glass text-lg font-semibold rounded-2xl border-2 border-red-500 hover:bg-red-500 hover:border-transparent transition-all duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Contact Owner
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="px-6 py-12">
+        <div class="max-w-2xl mx-auto">
+            <div class="glass p-1 rounded-2xl shadow-2xl">
+                <div class="flex">
+                    <i class="fas fa-search text-gray-400 p-4"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Search IDs by level, skins or price..." 
+                        class="w-full p-4 bg-transparent outline-none text-lg placeholder-gray-400 search-input"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ID Gallery -->
+    <section id="gallery" class="px-6 py-20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-16 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                🔥 ID GALLERY
+            </h2>
+            <div id="idGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- IDs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="px-6 py-20 bg-gradient-to-b from-black/50 to-transparent">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                Ready to Buy?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Contact owner directly on WhatsApp for instant deals and secure payments
+            </p>
+            <div class="glass p-8 rounded-3xl max-w-md mx-auto">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="fab fa-whatsapp text-4xl text-green-400 mr-4"></i>
+                    <span class="text-2xl font-bold">+91 98765 43210</span>
+                </div>
+                <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20Free%20Fire%20ID%20from%20your%20shop%20🔥" 
+                   target="_blank" 
+                   class="whatsapp-btn block w-full text-xl font-bold py-4 px-8 rounded-2xl text-white text-center neon-glow">
+                    <i class="fab fa-whatsapp mr-3"></i>
+                    Contact on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-75 z-[100] hidden flex items-center justify-center p-6">
+        <div class="glass p-8 rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    Admin Panel
+                </h2>
+                <button id="closeAdminModal" class="text-2xl hover:text-red-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="loginForm">
+                <div class="space-y-4 mb-8">
+                    <input type="password" id="adminPassword" placeholder="Enter Admin Password" 
+                           class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 transition-all text-lg">
+                    <button id="loginBtn" class="w-full bg-gradient-to-r from-red-500 to-red-600 p-4 rounded-xl font-bold text-lg hover:from-red-600 hover:to-red-700 transition-all">
+                        Login
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Panel -->
+            <div id="adminPanel" class="hidden">
+                <form id="uploadForm" class="space-y-4">
+                    <input type="file" id="idImage" accept="image/*" class="w-full p-4 rounded-xl bg-white bg-opacity-10 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-500 file:text-white hover:file:bg-red-600">
+                    <input type="text" id="idLevel" placeholder="Level (e.g., 89)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="text" id="idSkins" placeholder="Skins (e.g., 200+ Legendary)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <input type="number" id="idPrice" placeholder="Price (₹)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 p-4 rounded-xl font-bold text-lg hover:from-green-600 hover:to-green-700 transition-all">
+                        <i class="fas fa-upload mr-2"></i>Upload ID
+                    </button>
+                </form>
+                <div class="mt-6 pt-6 border-t border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-4">Uploaded IDs</h3>
+                    <div id="adminIdList" class="space-y-3 max-h-64 overflow-y-auto"></div>
+                </div>
+                <button id="logoutBtn" class="w-full mt-6 bg-gradient-to-r from-gray-500 to-gray-600 p-3 rounded-xl font-semibold hover:from-gray-600 hover:to-gray-700 transition-all">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data (replace with localStorage data)
+        let ids = JSON.parse(localStorage.getItem('freeFireIds')) || [
+            {
+                id: 1,
+                image: 'https://images.unsplash.com/photo-1618794016229-3f3b8b5e67cf?w=400&h=300&fit=crop',
+                level: '89',
+                skins: '250+ Legendary',
+                price: '₹2,499'
+            },
+            {
+                id: 2,
+                image: 'https://images.unsplash.com/photo-1570549717069-33bed1eb1528?w=400&h=300&fit=crop',
+                level: '92',
+                skins: '300+ Exclusive',
+                price: '₹3,999'
+            },
+            {
+                id: 3,
+                image: 'https://images.unsplash.com/photo-1608043152266-119f8339a919?w=400&h=300&fit=crop',
+                level: '87',
+                skins: '180+ Rare',
+                price: '₹1,899'
+            }
+        ];
+
+        const ADMIN_PASSWORD = 'admin123'; // Change this password
+        let isAdminLoggedIn = false;
+
+        // Render IDs
+        function renderIDs(filteredIds = ids) {
+            const gallery = document.getElementById('idGallery');
+            gallery.innerHTML = filteredIds.map(id => `
+                <div class="glass rounded-3xl p-6 card-hover group">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 h-64 bg-gradient-to-br from-gray-800 to-black">
+                        <img src="${id.image}" alt="Free Fire ID ${id.level}" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-red-500 text-xs px-2 py-1 rounded-full font-bold pulse-animation">
+                            🔥 HOT
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-black text-red-500">${id.level}</span>
+                            <i class="fas fa-crown text-yellow-400 text-xl"></i>
+                        </div>
+                        <div class="text-sm text-gray-400">${id.skins}</div>
+                        <div class="text-2xl font-bold text-green-400">${id.price}</div>
+                        <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20buy%20ID%20Level%20${id.level}%20for%20${id.price}%20🔥" 
+                           target="_blank" 
+                           class="whatsapp-btn block w-full text-center py-3 px-6 rounded-2xl font-bold text-sm uppercase tracking-wide">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = ids.filter(id => 
+                id.level.toLowerCase().includes(query) ||
+                id.skins.toLowerCase().includes(query) ||
+                id.price.toLowerCase().includes(query)
+            );
+            renderIDs(filtered);
+        });
+
+        // Admin functionality
+        document.getElementById('adminLoginBtn').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.remove('hidden');
+        });
+
+        document.getElementById('closeAdminModal').addEventListener('click', () => {
+            document.getElementById('adminModal').classList.add('hidden');
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            const password = document.getElementById('adminPassword').value;
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('adminPanel').classList.remove('hidden');
+                loadAdminIDs();
+            } else {
+                alert('❌ Wrong Password!');
+            }
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const imageFile = document.getElementById('idImage').files[0];
+            if (!imageFile) {
+                alert('Please select an image');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const newId = {
+                    id: Date.now(),
+                    image: e.target.result,
+                    level: document.getElementById('idLevel').value,
+                    skins: document.getElementById('idSkins').value,
+                    price: document.getElementById('idPrice').value
+                };
+
+                ids.unshift(newId);
+                localStorage.setItem('freeFireIds', JSON.stringify(ids));
+                renderIDs();
+                loadAdminIDs();
+                document.getElementById('uploadForm').reset();
+                alert('✅ ID uploaded successfully!');
+            };
+            reader.readAsDataURL(imageFile);
+        });
+
+        function loadAdminIDs() {
+            const adminList = document.getElementById('adminIdList');
+            adminList.innerHTML = ids.map(id => `
+                <div class="glass p-3 rounded-xl flex justify-between items-center text-sm">
+                    <span>Lv.${id.level} - ${id.price}</span>
+                    <button onclick="deleteID(${id.id})" class="text-red-400 hover:text-red-300">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        window.deleteID = function(id) {
+            ids = ids.filter(item => item.id !== id);
+            localStorage.setItem('freeFireIds', JSON.stringify(ids));
+            renderIDs();
+            loadAdminIDs();
+        };
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            isAdminLoggedIn = false;
+            document.getElementById('loginForm').classList.remove('hidden');
+            document.getElementById('adminPanel').classList.add('hidden');
+            document.getElementById('adminPassword').value = '';
+        });
+
+        // Initialize
+        renderIDs();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.prevent
+        function loadAdminIDs() {
+            const adminList = document.getElementById('adminIdList');
+            adminList.innerHTML = ids.map(id => `
+                <div class="glass p-3 rounded-xl flex justify-between items-center text-sm">
+                    <span>Lv.${id.level} - ${id.price}</span>
+                    <button onclick="deleteID(${id.id})" class="text-red-400 hover:text-red-300">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        window.deleteID = function(id) {
+            ids = ids.filter(item => item.id !== id);
+            localStorage.setItem('freeFireIds', JSON.stringify(ids));
+            renderIDs();
+            loadAdminIDs();
+        };
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            isAdminLoggedIn = false;
+            document.getElementById('loginForm').classList.remove('hidden');
+            document.getElementById('adminPanel').classList.add('hidden');
+            document.getElementById('adminPassword').value = '';
+        });
+
+        // Initialize
+        renderIDs();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.prevent
