@@ -106,7 +106,7 @@
         <div class="max-w-7xl mx-auto text-center">
             <div class="float-animation mb-8">
                 <i class="fas fa-fire text-6xl text-red-500 neon-glow mb-4 block"></i>
-                <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent mb-6">
+                <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 bg-clip-text text-transparent mb-6">
                     FREE FIRE ID SHOP
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -258,7 +258,7 @@
         ];
 
         const ADMIN_PASSWORD = 'admin123'; // Change this password
-        let isAdminLoggedIn = false;
+        let isAdminLoggedIn = true;
 
         // Render IDs
         function renderIDs(filteredIds = ids) {
@@ -372,7 +372,7 @@
         document.getElementById('logoutBtn').addEventListener('click', () => {
             isAdminLoggedIn = false;
             document.getElementById('loginForm').classList.remove('hidden');
-            document.getElementById('adminPanel').classList.add('hidden');
+            document.getElementById('adminPanel').classList.remove('hidden');
             document.getElementById('adminPassword').value = '';
         });
 
