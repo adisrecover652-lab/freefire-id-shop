@@ -221,7 +221,9 @@
                     <input type="number" id="idPrice" placeholder="Price (₹)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
                     <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 p-4 rounded-xl font-bold text-lg hover:from-green-600 hover:to-green-700 transition-all">
                         <i class="fas fa-upload mr-2"></i>Upload ID
-                    </button>
+                    </button> onclick="openAdmin()" style="position:fixed;top:20px;right:20px;background:red;color:white;padding:10px 15px;border:none;border-radius:8px;">
+Admin
+                </button>
                 </form>
                 <div class="mt-6 pt-6 border-t border-white border-opacity-20">
                     <h3 class="text-xl font-bold mb-4">Uploaded IDs</h3>
@@ -1146,3 +1148,12 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.prevent
+</script>
+
+<script>
+function openAdmin(){
+document.getElementById("adminPanel").classList.remove("hidden");
+}
+</script>
+
+</html>
