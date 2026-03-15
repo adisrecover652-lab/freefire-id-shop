@@ -171,7 +171,7 @@
             <h2 class="text-4xl md:text-5xl font-black mb-8 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                 Ready to Buy?
             </h2>
-            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+            <p class="text-xl text-green-300 mb-12 max-w-2xl mx-auto">
                 Contact owner directly on WhatsApp for instant deals and secure payments
             </p>
             <div class="glass p-8 rounded-3xl max-w-md mx-auto">
@@ -260,7 +260,7 @@
             }
         ];
 
-        const ADMIN_PASSWORD = 'admin123'; // Change this password
+        const ADMIN_PASSWORD = 'admin7276'; // Change this password
         let isAdminLoggedIn = true;
 
         // Render IDs
@@ -318,7 +318,7 @@
             if (password === ADMIN_PASSWORD) {
                 isAdminLoggedIn = true;
                 document.getElementById('loginForm').classList.add('hidden');
-                document.getElementById('adminPanel').classList.remove('hidden');
+                document.getElementById('adminPanel').classList.add('hidden');
                 loadAdminIDs();
             } else {
                 alert('❌ Wrong Password!');
@@ -597,7 +597,7 @@
             </div>
 
             <!-- Admin Panel -->
-            <div id="adminPanel" class="hidden">
+            <div id="adminPanel">
                 <form id="uploadForm" class="space-y-4">
                     <input type="file" id="idImage" accept="image/*" class="w-full p-4 rounded-xl bg-white bg-opacity-10 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-500 file:text-white hover:file:bg-red-600">
                     <input type="text" id="idLevel" placeholder="Level (e.g., 89)" class="w-full p-4 rounded-xl bg-white bg-opacity-10 focus:bg-opacity-20 text-lg">
@@ -873,7 +873,7 @@
                         type="text" 
                         id="searchInput"
                         placeholder="Search IDs by level, skins or price..." 
-                        class="w-full p-4 bg-transparent outline-none text-lg placeholder-gray-400 search-input"
+                        class="w-full p-4 bg-transparent outline-none text-lg placeholder-yellow-400 search-input"
                     >
                 </div>
             </div>
